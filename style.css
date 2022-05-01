@@ -1,0 +1,51 @@
+header {
+    text-align: center;
+    background-image: url(./assets/dreams.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+img {
+    box-shadow: 2px 2px 2px 3px black;
+}
+.col-1, .col-2, .col-3, .col-4 {
+    border: 2px solid red;
+    width: 100%;
+    text-align: center;
+}
+
+.flex-display {
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    margin-top: 80px;
+    border: 2px solid blue;
+}
+
+.mobile-row {
+    display: none;
+}
+
+@media only screen and (max-width: 980px){
+    .flex-display {
+        display: block;
+    }
+    
+  .mobile-row{
+      display: block;
+      text-align: center;
+  }
+
+  .row-2 {
+      display: none;
+  }
+}
